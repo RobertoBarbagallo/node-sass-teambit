@@ -12,3 +12,18 @@
         padding: $base_spacing;
     }
 }
+
+h1{
+    padding-top: $base_spacing *3;
+    padding-bottom: $base_spacing;
+}
+
+.multiple-btn-container{
+    @include flex_default;
+    padding-top: $base_spacing * 2;
+    padding-bottom: $base_spacing;
+
+    .btn{
+        margin: $base_spacing / 3
+    }
+}

@@ -32,6 +32,7 @@ ul{
     @include flex_default;
     padding: $base_spacing / 2;
     border-radius: 5px;
+    width: fit-content;
     .btn-img{
         width: 20px;
         height: 20px;
@@ -44,5 +45,24 @@ ul{
     &.google{
         color: $blue;
         border: 1px solid $blue;
+    }
+
+    &.default{
+        color: $white;
+        background-color: $blue;
+    }
+}
+
+.small-text{
+    font-size: $base_font_size * 2;
+}
+
+
+.half-size-img{
+    max-width: 540px;
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: contain;
     }
 }

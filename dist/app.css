@@ -33,6 +33,9 @@ ul {
   align-items: center;
   padding: 7.5px;
   border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .btn .btn-img {
   width: 20px;
@@ -47,6 +50,24 @@ ul {
   color: #2E4790;
   border: 1px solid #2E4790;
 }
+.btn.default {
+  color: #ffffff;
+  background-color: #2E4790;
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.half-size-img {
+  max-width: 540px;
+  width: 100%;
+}
+.half-size-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .navbar {
   border-bottom: 1px solid #58402C;
@@ -60,4 +81,19 @@ ul {
 }
 .navbar li {
   padding: 15px;
+}
+
+h1 {
+  padding-top: 45px;
+  padding-bottom: 15px;
+}
+
+.multiple-btn-container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.multiple-btn-container .btn {
+  margin: 5px;
 }
