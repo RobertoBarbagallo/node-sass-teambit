@@ -63,6 +63,27 @@ ul{
     width: 100%;
     img{
         width: 100%;
+        height: 400px;
         object-fit: contain;
+    }
+}
+
+.third-size-img{
+    max-width: 360px;
+    width: 100%;
+    img{
+        width: 50%;
+        height: 200px;
+        object-fit: contain;
+    }
+}
+
+.common-size-img{
+    max-width: 432px;
+    width: 100%;
+    img{
+        width: 75%;
+        height: 250px;
+        object-fit: contain; 
     }
 }

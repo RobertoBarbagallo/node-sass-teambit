@@ -1,0 +1,45 @@
+section{
+    padding: $base_spacing;
+
+    &:nth-child(odd){
+        background-color: $salmon;
+    }
+
+    .subsection{
+        padding: $base_spacing 0;
+        text-align: center;
+
+        .three-img-container{
+            padding: $base_spacing * 2;
+            @include flex_default;
+            justify-content: space-evenly;
+            width: 80%;
+            margin: auto;
+        }
+
+        .common-size-img{
+            margin: auto;
+            padding-bottom: $base_spacing * 3;
+        }
+
+        hr{
+            width: 80%;
+            margin: auto;
+            border-top: 1px solid $dark_brown;
+        }
+        &:nth-child(2){
+
+            .three-img-container{
+               
+                   .third-size-img{
+                      &:nth-child(3){
+                          img{
+                              width: 25%;
+                          }
+                      }
+                   }
+               
+            }
+        }
+    }
+}
