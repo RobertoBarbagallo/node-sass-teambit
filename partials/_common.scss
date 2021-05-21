@@ -10,7 +10,7 @@ body{
 
 
 .container{
-    max-width: 920px;
+    max-width: 1080px;
     width: 100%;
     margin: auto;
 }
@@ -19,6 +19,30 @@ body{
     display: flex;
 }
 
+.whitespace{
+    flex-grow: 1;
+}
+
 ul{
+    @include flex_default;
     list-style: none;
+}
+
+.btn{
+    @include flex_default;
+    padding: $base_spacing / 2;
+    border-radius: 5px;
+    .btn-img{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .btn-text{
+        padding-left: $base_spacing / 3
+    }
+
+    &.google{
+        color: $blue;
+        border: 1px solid $blue;
+    }
 }

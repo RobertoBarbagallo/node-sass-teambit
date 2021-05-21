@@ -1,0 +1,14 @@
+.navbar{
+    border-bottom: 1px solid $dark_brown;
+    .small-logo-container{
+        @include flex_default;
+
+        img{
+            padding: 0 $base_spacing / 2;
+        }
+    }
+
+    li{
+        padding: $base_spacing;
+    }
+}
