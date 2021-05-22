@@ -28,6 +28,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #2E4790;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -60,8 +65,7 @@ ul {
 }
 
 .half-size-img {
-  max-width: 540px;
-  width: 100%;
+  width: 50%;
 }
 .half-size-img img {
   width: 100%;
@@ -71,8 +75,7 @@ ul {
 }
 
 .third-size-img {
-  max-width: 360px;
-  width: 100%;
+  width: calc(100% / 3);
 }
 .third-size-img img {
   width: 50%;
@@ -82,14 +85,37 @@ ul {
 }
 
 .common-size-img {
-  max-width: 432px;
-  width: 100%;
+  width: calc(100% / 2,5);
+  margin: auto;
 }
 .common-size-img img {
   width: 75%;
   height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.half-size-container {
+  width: 50%;
+}
+.half-size-container img {
+  width: 100%;
+}
+.half-size-container.offset50 {
+  margin-left: 50%;
+}
+
+.card {
+  width: 40%;
+  margin: auto;
+  padding: 7.5px;
+  border: 1px solid #58402C;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: left;
+}
+.card p {
+  padding: 7.5px 0;
 }
 
 .navbar {
@@ -124,6 +150,30 @@ h1 {
 section {
   padding: 15px;
 }
+section .flex-container {
+  padding-top: 17px;
+}
+section h2 {
+  line-height: 60px;
+}
+section h4 {
+  padding: 15px 0;
+}
+section p {
+  padding: 30px 0;
+}
+section a {
+  display: block;
+  padding-bottom: 15px;
+}
+section .section-img-container {
+  width: 80%;
+}
+section .section-img-container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 section:nth-child(odd) {
   background-color: #FFE7D1;
 }
@@ -150,4 +200,23 @@ section .subsection hr {
 }
 section .subsection:nth-child(2) .three-img-container .third-size-img:nth-child(3) img {
   width: 25%;
+}
+section .subsection .card img {
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 5px;
+}
+section .subsection .card .founders {
+  display: flex;
+  align-items: center;
+}
+section .subsection .card .founders .names {
+  padding-left: 5px;
+}
+section .subsection .card .founders .names a {
+  padding: 0;
+}
+section .subsection .multiple-btn-container {
+  justify-content: center;
 }

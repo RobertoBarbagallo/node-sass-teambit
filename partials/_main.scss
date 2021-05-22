@@ -1,6 +1,35 @@
 section{
     padding: $base_spacing;
 
+    .flex-container{
+        padding-top: $base_spacing + 2;
+    }
+
+    h2{
+        line-height: $base_spacing * 4;
+    }
+
+    h4{
+        padding: $base_spacing 0;
+    }
+
+    p{
+        padding: ($base_spacing *2) 0;
+    }
+
+    a{ 
+        display: block;
+        padding-bottom: $base_spacing;
+    }
+
+    .section-img-container{
+        width: 80%;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
     &:nth-child(odd){
         background-color: $salmon;
     }
@@ -41,5 +70,27 @@ section{
                
             }
         }
+
+        .card{
+            img{
+                width: 40px;
+                object-fit: contain;
+                margin: $base_spacing / 3;
+            }
+            .founders{
+                @include flex_default;
+                .names{
+                    padding-left: $base_spacing / 3;
+                    a{
+                        padding: 0
+                    }
+                }
+            }
+        }
+
+        .multiple-btn-container{
+            justify-content: center;
+        }
     }
+
 }
