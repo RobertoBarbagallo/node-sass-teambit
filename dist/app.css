@@ -121,11 +121,11 @@ a {
 .navbar {
   border-bottom: 1px solid #58402C;
 }
-.navbar .small-logo-container {
+.navbar .logo-container {
   display: flex;
   align-items: center;
 }
-.navbar .small-logo-container img {
+.navbar .logo-container img {
   padding: 0 7.5px;
 }
 .navbar li {
@@ -219,4 +219,46 @@ section .subsection .card .founders .names a {
 }
 section .subsection .multiple-btn-container {
   justify-content: center;
+}
+
+footer .flex-container {
+  align-items: baseline;
+  padding: 30px;
+}
+footer .container-40 {
+  width: 40%;
+  padding: 0 15px 15px 150px;
+  display: flex;
+  align-items: center;
+}
+footer .container-40 .small-logo-container {
+  width: 50px;
+  margin-right: 30px;
+}
+footer .container-40 .small-logo-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .container-40 .small-logo-text {
+  font-weight: 600;
+}
+footer .container-40 .small-logo-text span {
+  color: #2E4790;
+}
+footer .container-60 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+footer .container-60 ul {
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+footer .container-60 ul li {
+  width: 20%;
+}
+footer .container-60 ul li p {
+  padding: 3.75px 0;
+  font-weight: 400;
 }

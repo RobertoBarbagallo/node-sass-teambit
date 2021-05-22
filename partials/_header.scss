@@ -1,6 +1,6 @@
 .navbar{
     border-bottom: 1px solid $dark_brown;
-    .small-logo-container{
+    .logo-container{
         @include flex_default;
 
         img{

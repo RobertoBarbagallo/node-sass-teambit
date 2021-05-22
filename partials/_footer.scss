@@ -1,0 +1,49 @@
+footer{
+    .flex-container{
+        align-items: baseline;
+        padding: $base_spacing *2;
+    }
+    .container-40{
+        width: 40%;
+        padding: 0 $base_spacing $base_spacing $base_spacing *10;
+        @include flex_default;
+    
+    
+        .small-logo-container{
+            width: 50px;
+    
+            img{
+                width: 100%;
+                object-fit: cover;
+               
+            }
+            margin-right: $base_spacing *2;
+        }
+        
+        .small-logo-text{
+            font-weight: 600;
+            span{
+                color: $blue;
+            }
+        }
+    }
+      
+    .container-60{
+        width: 60%;
+        @include flex_default;
+    
+        ul{
+            justify-content: space-evenly;
+            align-items: baseline;
+           
+            li{
+                width: 20%;
+                p{
+                    padding: $base_spacing / 4 0;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    
+}
