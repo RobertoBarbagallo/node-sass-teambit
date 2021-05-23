@@ -1,7 +1,8 @@
 .navbar{
-    border-bottom: 1px solid $dark_brown;
+    border-bottom: 1px solid $secondary_color;
     .logo-container{
         @include flex_default;
+        padding: $base_spacing 0;
 
         img{
             padding: 0 $base_spacing / 2;
@@ -10,6 +11,9 @@
 
     li{
         padding: $base_spacing;
+        &:hover{
+            color: $hover_color;
+        }
     }
 }
 

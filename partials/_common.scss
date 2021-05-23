@@ -5,7 +5,7 @@
 }
 
 body{
-    color: $dark_brown
+    color: $secondary_color
 }
 
 
@@ -50,12 +50,18 @@ a{
     &.google{
         color: $blue;
         border: 1px solid $blue;
+        &:hover{
+            color: $hover_color;
+            border-color: $hover_color;
+            
+        }
     }
 
     &.default{
         color: $white;
         background-color: $blue;
     }
+
 }
 
 .small-text{
@@ -107,7 +113,7 @@ a{
     width: 40%;
     margin: auto;
     padding: $base_spacing / 2;
-    border: 1px solid $dark_brown;
+    border: 1px solid $secondary_color;
     border-radius: 5px;
     background-color: $white;
     text-align: left;
